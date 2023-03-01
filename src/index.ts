@@ -32,8 +32,6 @@ abstract class User {
 	get pegarSenha(): string {
 		return this.senha;
 	}
-
-	// avançar com um projeto
 }
 
 class Consultor extends User {
@@ -56,8 +54,6 @@ class Consultor extends User {
 
 		return dados;
 	}
-	// avançar com um projeto
-	// pedir retirada de um projeto
 }
 
 class Gerente extends User {
@@ -80,10 +76,6 @@ class Gerente extends User {
 
 		return dados;
 	}
-	// avançar com um projeto
-	// dar aval sobre a retirada de um consultor
-	// passar o projeto a outro gerente
-	// entregar um projeto
 }
 
 class Projeto {
