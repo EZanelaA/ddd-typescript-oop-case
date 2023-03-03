@@ -36,6 +36,7 @@ abstract class User {
 
 class Consultor extends User {
 	public cargo = 'Consultor';
+
 	constructor(
 		nome: string,
 		senha: string,
@@ -58,6 +59,7 @@ class Consultor extends User {
 
 class Gerente extends User {
 	public cargo = 'Gerente';
+	
 	constructor(
 		nome: string,
 		senha: string,
@@ -161,7 +163,7 @@ abstract class Sistema {
 				this.GERENTES[i].projetos.push(nome);
 				break;
 			} else if (i == this.GERENTES.length - 1) {
-				console.log("Gerente não encontrado, por favor tente de novo.");
+				console.log("Gerente não encontrado, por favor retornar ao menu.");
 				while (true) {
 					const entrada = String(this.pegarInput());
 					if (entrada == "m") return;
